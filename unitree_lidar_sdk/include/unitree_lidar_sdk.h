@@ -130,6 +130,11 @@ class UnitreeLidarReader{
 public:
 
   /**
+   * @brief Virtual destructor for proper cleanup of derived classes
+   */
+  virtual ~UnitreeLidarReader() = default;
+
+  /**
    * @brief Initialize 
    * @return Return 0 if the serial port is opened successfully; 
    * return -1 if we failed to open the serial port.
